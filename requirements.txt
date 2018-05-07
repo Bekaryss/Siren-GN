@@ -1,0 +1,9 @@
+keras==2.1.5
+matplotlib==2.1.2
+numpy==1.14.0
+pandas==0.22.0
+tensorflow==1.7.0
+h5py==2.7.1
+music21==5.1.0
+celery==4.1.0
+tqdm==4.23.2
