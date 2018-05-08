@@ -3,6 +3,7 @@ import logging
 from gOptimizer import Optimizer
 from nSiren import make
 from tqdm import tqdm
+from celery.result import AsyncResult
 
 def train_networks(networks):
     """Train each network.
@@ -11,13 +12,20 @@ def train_networks(networks):
         dataset (str): Dataset to use for training/evaluating
     """
     pbar = tqdm(total=len(networks))
-
+    result = []
     for network in networks:
+        time.sleep(2)
         res = make.apply_async(kwargs=(network.network))
+        result.append(res.id)
         # time.sleep(2)
         # print(network.network["nb_neurons"])
-        network.loss = res.get()
+        # network.loss = res.get()
         pbar.update(1)
+
+    for item in result:
+        res = AsyncResult(item)
+        print(res.state)
+        network.loss = res.get()
     pbar.close()
 
 
