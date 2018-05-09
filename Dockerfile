@@ -24,10 +24,4 @@ RUN apt-get install -y curl grep sed dpkg && \
 ENTRYPOINT [ "/usr/bin/tini", "--" ]
 CMD [ "/bin/bash" ]
 
-
-
-RUN conda create -n Siren python=3.6
-RUN source activate Siren
-
-RUN pip install -r requirements.txt
 ADD Siren-GN /home/Siren-GN
