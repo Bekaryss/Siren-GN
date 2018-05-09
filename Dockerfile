@@ -24,6 +24,21 @@ RUN apt-get install -y curl grep sed dpkg && \
 ENTRYPOINT [ "/usr/bin/tini", "--" ]
 CMD [ "/bin/bash" ]
 
+RUN echo "1/5 Step: Conda create"
 
 RUN mkdir home/Siren-GN
 COPY . /home/Siren-GN/
+WORKDIR /home/Siren-GN/
+
+RUN echo "2/5 Step: Copy project"
+
+RUN conda create -n Siren python=3.6
+
+RUN echo "3/5 Step: Conda Siren-GN create"
+RUN source activate Siren
+RUN echo "4/5 Step: Source activate Siren-GN"
+
+RUN pip install -r requirements.txt
+RUN echo "5/5 Step: Pip install Siren-GN"
+
+RUN celery -A nSiren worker -l info
