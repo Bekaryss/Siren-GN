@@ -32,10 +32,10 @@ WORKDIR /home/Siren-GN/
 
 RUN echo "2/5 Step: Copy project"
 
-RUN conda create -n Siren python=3.6
+RUN conda create -n Siren-GN python=3.6
 
 RUN echo "3/5 Step: Conda Siren-GN create"
-RUN source activate Siren
+RUN source activate Siren-GN
 RUN echo "4/5 Step: Source activate Siren-GN"
 
 RUN pip install -r requirements.txt
