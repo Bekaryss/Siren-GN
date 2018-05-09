@@ -26,4 +26,4 @@ CMD [ "/bin/bash" ]
 
 
 RUN mkdir home/Siren-GN
-COPY /* /home/Siren-GN/
+COPY . /home/Siren-GN/
