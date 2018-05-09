@@ -29,7 +29,7 @@ COPY . /home/Siren-GN/
 
 WORKDIR /home/Siren-GN
 RUN conda create -n Siren-GN python=3.6
-RUN source activate Siren-GN
+RUN "source activate Siren-GN"
 RUN pip install -r requirements.txt
 
 RUN celery -A nSiren worker -l info
