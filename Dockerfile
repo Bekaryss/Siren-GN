@@ -24,4 +24,6 @@ RUN apt-get install -y curl grep sed dpkg && \
 ENTRYPOINT [ "/usr/bin/tini", "--" ]
 CMD [ "/bin/bash" ]
 
-ADD Siren-GN /home/Siren-GN
+
+RUN mkdir home/Siren-GN
+COPY /* /home/Siren-GN/
