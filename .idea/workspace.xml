@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c25668f-62e8-4113-b6d5-8b51faadaaf5" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/info.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nMidiUtils.py" beforeDir="false" afterPath="$PROJECT_DIR$/nMidiUtils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nSiren.py" beforeDir="false" afterPath="$PROJECT_DIR$/nSiren.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weights_files/weights-improvement-01-0.2756-bigger.hdf5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/weights_files/weights-improvement-01-0.2905-bigger.hdf5" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,8 +20,8 @@
       <file leaf-file-name="nSiren.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nSiren.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+            <state relative-caret-position="240">
+              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -734,8 +728,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nSiren.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+        <state relative-caret-position="240">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>

@@ -14,7 +14,7 @@ neuron = Neuron(128, 0.1, 128, 'sigmoid', 'binary_crossentropy', "rmsprop", 4, 6
 def make(dense, dropout, lstm, activation, loss, optimizer, epochs, batch_size):
     print("Worker")
     loss = train(dense, dropout, lstm, activation, loss, optimizer, epochs, batch_size)
-    return loss
+    return loss, "Computer 1"
 
 def train(dense, dropout, lstm, activation, loss, optimizer, epochs, batch_size):
     neuron = Neuron(dense, dropout, lstm, activation, loss, optimizer, epochs, batch_size)
