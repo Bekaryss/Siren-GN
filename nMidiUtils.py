@@ -104,7 +104,7 @@ class MidiUtils:
         gc.collect()
         network_input = np.zeros((matrix.shape[0] - self.sequence_length, self.sequence_length, self.range))
         network_output = np.zeros((matrix.shape[0] - self.sequence_length, self.range))
-        for i in range(0, matrix.shape[0] - self.sequence_length, 4):
-            network_input[i:i+4, :, :] = matrix[i:i + self.sequence_length, :]
-            network_output[i:i+4, :] = matrix[i + self.sequence_length, :]
+        for i in range(0, matrix.shape[0] - self.sequence_length, 1):
+            network_input[i, :, :] = matrix[i:i + self.sequence_length, :]
+            network_output[i, :] = matrix[i + self.sequence_length, :]
         return network_input, network_output

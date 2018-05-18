@@ -5,9 +5,9 @@ from nNeuron import Neuron
 import glob
 import os
 from celery import Celery
-app = Celery('task', backend='rpc://', broker='amqp://beka:beka@172.20.10.6:5672/vhost_beka')
+app = Celery('task', backend='rpc://', broker='amqp://beka:beka@192.168.1.47:5672/vhost_beka')
 
-midiUtil = MidiUtils('midi_songs/*.mid', 30, 100, 60, 0.25, 'output.mid')
+midiUtil = MidiUtils('midi_songs/*.mid', 30, 100, 100, 0.25, 'output.mid')
 neuron = Neuron(128, 0.1, 128, 'sigmoid', 'binary_crossentropy', "rmsprop", 4, 64)
 
 @app.task
